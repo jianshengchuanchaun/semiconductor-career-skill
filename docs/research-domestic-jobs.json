@@ -1,0 +1,214 @@
+[
+  {
+    "id": "C1",
+    "company": "芯朋微电子（Chipown）",
+    "category": "domestic",
+    "title": "模拟IC设计工程师（校招）",
+    "location": "无锡/苏州/上海",
+    "career_stage": "校园招聘；硕士/博士；该岗位段落未标毕业届别或经验年限",
+    "posting_date": "2026-07-31",
+    "checked_date": "2026-09-22",
+    "url": "https://www.chipown.com.cn/cn/jobxylist/213.html",
+    "status": "官网正文可读，显示立即应聘入口；未提交申请，未核实招聘名额或投递是否仍有效",
+    "requirements": [
+      {
+        "skill": "模拟电路设计与仿真",
+        "evidence_type": "explicit",
+        "paraphrase": "职责列出模拟IC开发、仿真和验证；属于工作内容，不能直接解释为入职前独立完成全部流程的硬门槛。"
+      },
+      {
+        "skill": "版图协同",
+        "evidence_type": "explicit",
+        "paraphrase": "职责包括指导模拟版图实现。"
+      },
+      {
+        "skill": "测试协同",
+        "evidence_type": "explicit",
+        "paraphrase": "职责涉及系统验证及CP/FT、可靠性测试协助。"
+      },
+      {
+        "skill": "设计文档",
+        "evidence_type": "explicit",
+        "paraphrase": "职责要求形成规范设计文档。"
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "模拟电路设计与仿真",
+        "learning_task": "教学建议：选单级放大器建立手算、小信号模型与仿真对照，再增加负载和供电变化；用实际模型说明适用范围。",
+        "evidence": "带模型来源、参数、测试条件的网表或工程；增益/带宽/功耗表；一项预测与仿真偏差解释。"
+      },
+      {
+        "skill": "版图协同",
+        "learning_task": "教学建议：在具备合法工具和PDK时，选一个小模块做匹配与寄生敏感性分析；未获得环境时先写布局约束与评审清单。",
+        "evidence": "布局约束、匹配说明；仅在真实运行后附DRC/LVS报告和寄生后仿结果，概念作业单独标注。"
+      },
+      {
+        "skill": "测试协同",
+        "learning_task": "教学建议：把一条性能规格改写为可执行测试方法，区分晶圆探针测试、封装成品测试和实验室验证；有设备再采实测。",
+        "evidence": "测试矩阵和误差预算；有仪器时提供原始读数，无仪器时标注仿真或测试方案。"
+      },
+      {
+        "skill": "设计文档",
+        "learning_task": "教学建议：写一份包含规格、方案、真实结论及真实失败或明确标注的教学注入案例、复现步骤的小模块报告。",
+        "evidence": "规格—测试—结论索引表，以及已知不足清单。"
+      }
+    ],
+    "limits": [
+      "页面该岗位段落列的是学历及职责，没有单列专业、工具名称、最低项目数、英语或优先条件；这些字段不能由常识补成企业要求。",
+      "同页模拟IC设计实习生另有2028届硕士和1年+实习要求；它是另一个岗位，不能与本校招岗位字段混用。",
+      "下方学习任务为本项目教学设计，并非芯朋微指定考题或官方培养计划。"
+    ],
+    "source_evidence": {
+      "authority": "企业官网校园招聘页面；官网社招页面的校园招聘导航可到达该URL。",
+      "locator": "标题为模拟IC设计工程师（校招）的首个岗位段落；核查工具正文行49–67。",
+      "summary": "已核到岗位、日期、三座城市、硕博学历和五项职责；未看到单列任职要求或优先条件。",
+      "supporting_urls": [
+        "https://www.chipown.com.cn/cn/joblist/193.html"
+      ],
+      "direct_quote": ""
+    }
+  },
+  {
+    "id": "C2",
+    "company": "泰凌微电子（Telink）",
+    "category": "domestic",
+    "title": "2027校招-数字验证工程师（南京）",
+    "location": "江苏省-南京市",
+    "career_stage": "2027校园招聘；全职；硕士及以上，电子/微电子/计算机/通信等相关专业",
+    "posting_date": null,
+    "checked_date": "2026-09-22",
+    "url": "https://telink.zhiye.com/zpdetail/190837585",
+    "status": "官方招聘平台正文可读，显示现在申请；未提交申请，未核实招聘名额或投递是否仍有效",
+    "requirements": [
+      {
+        "skill": "数字基础与HDL",
+        "evidence_type": "required",
+        "paraphrase": "任职资格要求数字电路基础、验证流程、Verilog掌握及SystemVerilog熟悉。"
+      },
+      {
+        "skill": "验证方法和编程",
+        "evidence_type": "required",
+        "paraphrase": "熟悉C/C++，了解UVM/OVM，并掌握所列脚本语言至少一种；不可把了解方法学改写成精通平台。"
+      },
+      {
+        "skill": "文档与英文",
+        "evidence_type": "required",
+        "paraphrase": "能够编写验证计划和报告，英语CET-6及以上并能读写技术资料。"
+      },
+      {
+        "skill": "回归与覆盖率",
+        "evidence_type": "explicit",
+        "paraphrase": "工作职责包含回归、代码与功能覆盖分析收敛。"
+      },
+      {
+        "skill": "项目经历",
+        "evidence_type": "preferred",
+        "paraphrase": "无线/DSP相关验证、UVM/OVM或断言课题、流片验证或FPGA测试等经历被列为优先。"
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "数字基础与HDL",
+        "learning_task": "教学建议：从计数器、状态机和同步FIFO开始，解释复位、时钟、并发语义，再写自检测试；不以背语法替代时序推理。",
+        "evidence": "可运行RTL、自检测试、正常与异常场景波形、定位并修复的一项真实缺陷或明确标注的教学注入；原规格全部通过时保留真实结论。"
+      },
+      {
+        "skill": "验证方法和编程",
+        "learning_task": "教学建议：先用C/C++写小型参考模型，用Python或Shell自动运行回归，再在工具支持时将简单验证环境拆成driver、monitor和scoreboard等角色。",
+        "evidence": "参考模型单元测试、自动回归脚本、固定随机种子和失效复现指令；未运行UVM时明确只完成方法学习。"
+      },
+      {
+        "skill": "回归与覆盖率",
+        "learning_task": "教学建议：把FIFO规格拆成复位、满空、同时读写、边界等验证点，建立功能覆盖映射；依据遗漏用例迭代。",
+        "evidence": "规格到用例到覆盖的矩阵、回归汇总、覆盖缺口说明和缺陷记录；不把代码覆盖100%当功能正确保证。"
+      },
+      {
+        "skill": "文档与英文",
+        "learning_task": "教学建议：每周读一段英文协议或工具文档，用中文解释行为，并写一页英文缺陷复现说明；学历与CET-6等资格单独检查。",
+        "evidence": "标有出处的技术摘要、英文issue、验证报告；考试资格未达到时单列行动项。"
+      },
+      {
+        "skill": "项目经历",
+        "learning_task": "教学建议：核心验证项目稳定后，再选择一种目标岗位相关协议或DSP模块扩展；优先经历不应挤占基础补齐时间。",
+        "evidence": "增量规格、实际个人贡献、可重跑结果与剩余问题；不虚构实习、流片或板测。"
+      }
+    ],
+    "limits": [
+      "页面未展示发布日期；posting_date留空，不能把搜索抓取时间当发布时间。",
+      "本条是南京岗位；官网另列上海同名岗位，不能默认地点可任意协商。",
+      "英语证书和专业属于本岗位明示条件，不能扩展成全部本土企业统一条件。",
+      "优先项目经历与任职资格分开；工作职责不能全量转成研一入门先修。"
+    ],
+    "source_evidence": {
+      "authority": "Telink企业官网Campus Recruitment页面FAQ指向telink.m.zhiye.com校招入口；同一Telink招聘系统Campus列表链接到本岗位详情。",
+      "locator": "招聘类别/地点：正文行12–22；职责行26–31；资格及优先项行33–45。",
+      "summary": "已核到2027校招、南京、学历专业、资格、优先经历和验证职责；未核到发布日期。",
+      "supporting_urls": [
+        "https://www.telink-semi.com/campus-recruitment",
+        "https://telink.zhiye.com/Campus"
+      ],
+      "direct_quote": ""
+    }
+  },
+  {
+    "id": "C3",
+    "company": "圣邦微电子（SGMICRO）",
+    "category": "domestic",
+    "title": "模拟集成电路设计工程师",
+    "location": "哈尔滨/上海/深圳/大连/成都/苏州/北京",
+    "career_stage": "社会招聘；3年及以上工作经验；微电子/集成电路相关专业，硕士及以上；仅作为职业成长参照",
+    "posting_date": "2024-04-18（页面显示日期，未进一步说明是初发还是更新）",
+    "checked_date": "2026-09-22",
+    "url": "https://www.sg-micro.com/cn/society/job/2",
+    "status": "历史发布日期的官网正文可读；未验证当前投递有效性；不可作为应届职位推荐",
+    "requirements": [
+      {
+        "skill": "模拟基本模块",
+        "evidence_type": "required",
+        "paraphrase": "要求理解并掌握基本模拟模块的原理与设计。"
+      },
+      {
+        "skill": "器件、工艺和控制知识",
+        "evidence_type": "required",
+        "paraphrase": "要求具备半导体器件物理、制造工艺及控制原理知识。"
+      },
+      {
+        "skill": "EDA和版图工具",
+        "evidence_type": "required",
+        "paraphrase": "要求熟练使用相关工具；未点名软件品牌。"
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "模拟基本模块",
+        "learning_task": "教学建议：用于制定毕业后的成长方向；研一阶段先选择一个模块解释工作区、增益、噪声与稳定性相关取舍。",
+        "evidence": "推导与实验一致性检查、参数敏感性结果、一次有依据的对照修改记录；真实失败或教学注入另行标明，不强求原设计出现失败。"
+      },
+      {
+        "skill": "器件、工艺和控制知识",
+        "learning_task": "教学建议：把器件与工艺课程连接到具体电路；在授权模型范围内测试参数变化，区分工艺角、失配和模型假设。",
+        "evidence": "模型适用边界、corner条件表、带单位的结果和不能得出的结论。"
+      },
+      {
+        "skill": "EDA和版图工具",
+        "learning_task": "教学建议：学习可复现的工程组织、仿真设置和结果定位；若做版图，逐项获取对应检查报告。",
+        "evidence": "运行步骤、仿真日志、版本信息；实际完成后才列DRC/LVS/后仿。"
+      }
+    ],
+    "limits": [
+      "必须显著标注社招、3年以上经验、历史日期；不能向研一学生展示为近期校招硬门槛。",
+      "未列优先条件、具体工具品牌、薪酬、岗位名额；均不补写。",
+      "只能说明这一岗位的要求，不能用来评价圣邦所有岗位或本土企业整体。"
+    ],
+    "source_evidence": {
+      "authority": "圣邦企业官网society招聘详情。",
+      "locator": "职位属性：正文行3–23；岗位要求：行31–39。",
+      "summary": "已核到7座城市、3年经验、硕士学历、日期及三组专业能力要求。",
+      "supporting_urls": [
+        "https://www.sg-micro.com/cn/recruitment/society"
+      ],
+      "direct_quote": ""
+    }
+  }
+]

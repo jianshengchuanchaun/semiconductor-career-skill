@@ -1,0 +1,294 @@
+{
+  "metadata": {
+    "skill_name": "semiconductor-career-planner",
+    "timestamp": "2026-09-22",
+    "evals_run": [
+      1,
+      2,
+      3
+    ],
+    "runs_per_configuration": 1,
+    "replications_per_scenario": 1,
+    "metric_scope": "Descriptive assertion results only; no timing or token measurements."
+  },
+  "runs": [
+    {
+      "eval_id": 1,
+      "eval_name": "analog-first-year",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1
+      },
+      "expectations": [
+        {
+          "text": "先给岗位技能地图，随后诊断，不把未测能力标为已掌握",
+          "passed": true,
+          "evidence": "response.md:3–12 先列六项岗位能力及目标等级；14 明确“六项能力均记‘待测’，工具操作不预设会用”；16 才进入诊断。L1/L2/L3 被明确解释为目标，不是既有能力。"
+        },
+        {
+          "text": "每周总时间不超过12小时且有明确缓冲",
+          "passed": true,
+          "evidence": "response.md:20 明确每周排9.5h、缓冲2.5h；32–35 四周任务分别为3+4.5+2=9.5、3+4.5+2=9.5、2.5+5+2=9.5、3+4.5+2=9.5，均加2.5h缓冲后为12h。41 的75分钟注明计入W1。"
+        },
+        {
+          "text": "前4周任务有具体产物与验收",
+          "passed": true,
+          "evidence": "response.md:32–35：W1交手算/网表/日志并解释节点单位；W2交模型参数/工作区和三个偏置结果；W3交增益/工作点对照并检查AC与小信号瞬态一致性；W4从新目录重跑、解释异常、写下月规格。四周均有检查或失败后缩减步骤。"
+        },
+        {
+          "text": "账号未到位时提供合法可执行替代，并明确未完成商业PDK验证",
+          "passed": true,
+          "evidence": "response.md:14 账户不可用；32 提供ngspice官方教程分压器和RC、安装卡住后手算；33 环境不可用交解析曲线并标“待仿真”；24 将商业环境迁移与重新核对器件安排在账户可用后；37 明确安装和实验尚需本人执行。没有把教学模型或手算表述为已完成商业PDK验证。"
+        },
+        {
+          "text": "项目结合传感器接口课题，给出今天行动而不承诺就业",
+          "passed": true,
+          "evidence": "response.md:1、23、26、39 将共源级/五管OTA与导师传感器接口课题相连；41 给出计入W1的今天75分钟动作；12 声明仅一份岗位样本且地区未确认，全文没有就业保证。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "low-time-no-tools",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1
+      },
+      "expectations": [
+        {
+          "text": "解释DV与FPGA能力差异并先安排小规模探索",
+          "passed": true,
+          "evidence": "response.md:1、3–10 解释DV侧重规格/自检/排错，FPGA侧重RTL实现/资源与约束/板级调试；18 首月只做同一个四位计数器；25 有有限的FPGA纸面映射体验。"
+        },
+        {
+          "text": "不承诺大厂offer，不同时布置两条完整路线",
+          "passed": true,
+          "evidence": "response.md:1 明确不能保证任何企业offer、6h不适合两套完整路线；14 暂以DV优先体验、FPGA备选；18、31 将首月限定为单项目，后续项目等定向再升级。"
+        },
+        {
+          "text": "每周不超过6小时且留缓冲",
+          "passed": true,
+          "evidence": "response.md:18 明确4.8h任务+1.2h缓冲=6h。22–25 每周均1.5+2.5+0.8=4.8h；四周任务19.2h+缓冲4.8h=24h。35 今天75分钟计入W1。"
+        },
+        {
+          "text": "无商业EDA和板卡时仍有可执行任务并说明硬件验证缺失",
+          "passed": true,
+          "evidence": "response.md:22 可用Python参考模型/十周期手算；23 安装超过1h转手推和代码审阅，标“RTL未运行”；25 无板不填实测；27 明确Python不能替代HDL仿真、综合、时序或板级证据。没有要求购买开发板。"
+        },
+        {
+          "text": "第一个月计划包含产物、验收和复盘选择条件",
+          "passed": true,
+          "evidence": "response.md:22–25 四周分别有规格/输入期望序列、RTL/版本/波形、自检/故障注入、3位参数复测/硬件框图；24 要求正确版与故障版表现不同；33 明确按兴趣、独立产出、课题复用与资源选择方向。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "evidence-and-replan",
+      "configuration": "with_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1
+      },
+      "expectations": [
+        {
+          "text": "不虚构独立设计、LVS、流片或量产经历",
+          "passed": true,
+          "evidence": "response.md:1 明确不能支持“独立设计量产芯片”或“LVS全通过”；19–21 将多条件/寄生仿真、版图/DRC/LVS、流片/实测/量产列为未提供或未完成；10 不添加未报告完成的动作。"
+        },
+        {
+          "text": "提供清楚标注教程复现和典型条件的可用简历表述",
+          "passed": true,
+          "evidence": "response.md:7–8 可直接使用的条目标为“开源运放教程仿真复现｜个人学习项目”，正文限定为教程所设典型条件下波形、示例运行和观察；10 提醒补来源日期且不加无证据指标。"
+        },
+        {
+          "text": "指出仿真成功不等于LVS或全面达标",
+          "passed": true,
+          "evidence": "response.md:18 说明波形存在不自动证明指标达标；23 解释LVS需要版图与参考电路/网表、规则、检查器及报告，仿真成功没有完成这种比较，不能外推到签核或生产表现。"
+        },
+        {
+          "text": "下周任务按8小时净时间重排并有缓冲",
+          "passed": true,
+          "evidence": "response.md:29–33 任务2+2.8+1.6=6.4h，缓冲1.6h，总8h；若只能4h则2+1.2+0.8=4h；41 现在60分钟计入任务A。拒绝按20h安排。"
+        },
+        {
+          "text": "包含独立复现或边界验证任务及证据验收",
+          "passed": true,
+          "evidence": "response.md:29–31 要求记录版本、来源、测试条件并保留原始日志；B先重跑基线，再单变量减半输入幅度、保存前后结果；37 以干净目录重跑验收；31 用证据索引和他人能找到输入结果作为最低收口。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    },
+    {
+      "eval_id": 1,
+      "eval_name": "analog-first-year",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "expectations": [
+        {
+          "text": "先给岗位技能地图，随后诊断，不把未测能力标为已掌握",
+          "passed": true,
+          "evidence": "response.md:3–11 在诊断前列岗位能力框架；13 才安排诊断，并要求按“独立算并解释/提示后完成/不会”记录；1 明确按尚不会使用EDA安排。未把学过课程当作已经掌握。"
+        },
+        {
+          "text": "每周总时间不超过12小时且有明确缓冲",
+          "passed": false,
+          "evidence": "response.md:19–24 每周安排恰好12h：W1=2+3+3+2+2，W2=4+3+3+2，W3=3+3+3+3，W4=3+3+3+3。上限满足，但没有明确留出缓冲。W2的“最多2小时排错”是卡住后的替代安排，不是每周预留的机动容量，故复合断言不通过。"
+        },
+        {
+          "text": "前4周任务有具体产物与验收",
+          "passed": true,
+          "evidence": "response.md:21 W1交诊断纸、两道算例、环境记录；22 W2验收工作区与偏置变化解释；23 W3交含条件/增益/带宽的一页说明；24 W4从保存文件重跑并解释AC/瞬态关系和三个未解决问题。产物与验收均具体。"
+        },
+        {
+          "text": "账号未到位时提供合法可执行替代，并明确未完成商业PDK验证",
+          "passed": true,
+          "evidence": "response.md:17 明确账户延迟就用公开模型，成果限定为教学模型结果；21 不要求第一周跑通商业EDA；22 软件卡住时继续手算。可立即做诊断、推导与条件整理，未冒称商业PDK验证。未给出具体公开模型或仿真器入口会增加后续选择成本，但不使手算替代不可执行，因此不强判失败。"
+        },
+        {
+          "text": "项目结合传感器接口课题，给出今天行动而不承诺就业",
+          "passed": true,
+          "evidence": "response.md:1、11、17 将项目绑定传感器接口；28 明确从本周诊断和账户申请开始，可作为当下动作；11 说明框架不代表招聘承诺。未限定今天分钟数，但断言也未要求。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    },
+    {
+      "eval_id": 2,
+      "eval_name": "low-time-no-tools",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 4,
+        "failed": 1,
+        "total": 5,
+        "pass_rate": 0.8
+      },
+      "expectations": [
+        {
+          "text": "解释DV与FPGA能力差异并先安排小规模探索",
+          "passed": true,
+          "evidence": "response.md:3 解释DV的规格/测试/失败定位，以及FPGA的HDL/器件资源/时钟约束/综合实现/板级调试；5 首月共同项目为四位计数器；16 月底才选主线。"
+        },
+        {
+          "text": "不承诺大厂offer，不同时布置两条完整路线",
+          "passed": true,
+          "evidence": "response.md:1 明确不能保证一年offer，不并行两套完整技能；14 暂不安排UVM、复杂总线或买板；16 没有偏好时仅再做两周有限比较，不无限双线推进。"
+        },
+        {
+          "text": "每周不超过6小时且留缓冲",
+          "passed": false,
+          "evidence": "response.md:7、9–12 每周三次2h且所有6h都分配给任务：W1=1+2+2+1；W2=2+1+2+1；W3=1+3+1+1；W4=2+1+1+2。未超6h，但无明确缓冲。W2安装1h上限及任务顺延不等于预留缓冲，故断言失败。"
+        },
+        {
+          "text": "无商业EDA和板卡时仍有可执行任务并说明硬件验证缺失",
+          "passed": true,
+          "evidence": "response.md:5 用Python参考模型但声明不能替代HDL和硬件验证；9 可手算或用短脚本；10 环境失败后手推时序/检查代码，并不记为验证通过；12 明确上板未做、无综合结果不报资源或最高频率；14 不要求买板。"
+        },
+        {
+          "text": "第一个月计划包含产物、验收和复盘选择条件",
+          "passed": true,
+          "evidence": "response.md:9–12 有规格、代码、自动测试、错误日志、运行说明和一页复盘；11 验收注入错误被明确失败抓住；16 按反例排错兴趣与硬件实现兴趣、导师项目/资源/实习要求选择主线。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    },
+    {
+      "eval_id": 3,
+      "eval_name": "evidence-and-replan",
+      "configuration": "without_skill",
+      "run_number": 1,
+      "result": {
+        "passed": 5,
+        "failed": 0,
+        "total": 5,
+        "pass_rate": 1
+      },
+      "expectations": [
+        {
+          "text": "不虚构独立设计、LVS、流片或量产经历",
+          "passed": true,
+          "evidence": "response.md:1 拒绝独立设计、量产和LVS全通过；8 禁用“独立芯片设计”“量产项目”；10 不加无证据指标或全面验证；23 区分LVS、流片和量产。"
+        },
+        {
+          "text": "提供清楚标注教程复现和典型条件的可用简历表述",
+          "passed": true,
+          "evidence": "response.md:5–6 条目标为开源运放仿真复现、个人学习项目，并限定典型条件和教程复现；8 对“学习电路工作过程”明确加前提，若只运行而未分析则删除。这个条件说明使其没有被无条件冒称已完成分析，不因此强判失败。"
+        },
+        {
+          "text": "指出仿真成功不等于LVS或全面达标",
+          "passed": true,
+          "evidence": "response.md:10 说明典型波形不足以支持性能指标或DC/AC/瞬态全面验证；23 说明LVS需要版图与原理图/参考网表对应检查及报告，亦不等于流片量产。"
+        },
+        {
+          "text": "下周任务按8小时净时间重排并有缓冲",
+          "passed": true,
+          "evidence": "response.md:12 明确8h且留1h机动；14–17 四次各2h，其中第四次只有1h排定整理，另1h机动。总任务7h+1h缓冲=8h；20h目标与8h可用时间之间12h缺口计算正确。"
+        },
+        {
+          "text": "包含独立复现或边界验证任务及证据验收",
+          "passed": true,
+          "evidence": "response.md:14 保存来源/模型/运行方法/条件后重新运行；16 选择单变量做2–3条件对比；19 最低验收要求他人可追溯来源、个人步骤、波形条件及结论范围；21 新的简历动作只在实际完成后使用。"
+        }
+      ],
+      "notes": [
+        "One output per scenario and condition; no client import test."
+      ]
+    }
+  ],
+  "run_summary": {
+    "with_skill": {
+      "pass_rate": {
+        "mean": 1,
+        "stddev": 0.0,
+        "min": 1,
+        "max": 1
+      }
+    },
+    "without_skill": {
+      "pass_rate": {
+        "mean": 0.8666666666666667,
+        "stddev": 0.11547005383792512,
+        "min": 0.8,
+        "max": 1
+      }
+    },
+    "delta": {
+      "pass_rate": "+0.13"
+    }
+  },
+  "notes": [
+    "Three scenarios, one response per condition. This is a smoke check, not a statistically powered efficacy study.",
+    "Standard deviation describes differences between these scenarios, not repeated-run stability.",
+    "Time, token counts and client end-to-end compatibility were not measured."
+  ]
+}

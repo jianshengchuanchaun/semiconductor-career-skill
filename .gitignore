@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+~$*.docx
+.DS_Store
+Thumbs.db
+.qa/
+evaluation-workspace/
+career-plan/
+release/*-source-v*.zip
+# Office deliverables are distributed separately from the source repository.
+*.doc
+*.docx
+*.docm
+*.ppt
+*.pptx
+*.pptm
+*.pdf
