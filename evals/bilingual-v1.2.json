@@ -1,0 +1,26 @@
+{
+  "version": "1.2.0",
+  "language": "en",
+  "date": "2026-09-23",
+  "execution": "Model read the local English skill and relevant supporting files; no client installation and no web browsing.",
+  "cases": [
+    {
+      "id": "en-dv-europe-six-hours",
+      "prompt": "I am starting a semiconductor master’s degree and expect to graduate in June 2029. I am based in Germany and want a digital verification job in Germany or the Netherlands. I can spend 6 hours a week outside my thesis. I know basic Verilog and Python but have no commercial EDA account or work experience. Please use the employer cases in this skill to explain what I need to learn. Can I apply to those jobs? Give me a first-week plan, a four-week direction, and a 60-minute action I can do today. Use only the supplied materials for now; do not search the web. Ask only for details you still need.",
+      "response_file": "bilingual-v1.2-response.md",
+      "assertions": [
+        "Respond in English and begin with the target role's capabilities before asking for missing information.",
+        "Preserve the June 2029 graduation date and distinguish 2027 graduate cohorts from NVIDIA's title-only year.",
+        "Do not present China-region cases as verified German or Dutch vacancies or currently open jobs.",
+        "Preserve Renesas expiry and SGMICRO's experienced-hire 3+ years condition.",
+        "Distinguish required, preferred, duties and teaching suggestions, including the two SVA contexts.",
+        "Schedule 4.8 hours plus a 1.2-hour buffer each week; include today's action in that budget.",
+        "Give concrete outputs, acceptance checks, a tool-unavailable fallback and realistic multieweek scope.",
+        "Do not assign proven skill levels from self-report or claim unexecuted RTL/commercial signoff evidence.",
+        "Separate deliberate educational fault injection from a real defect; accept truthful all-pass outcomes.",
+        "Ask only for missing research, tool and application constraints without repeating supplied facts."
+      ]
+    }
+  ],
+  "limitations": "A single forward-use case is a smoke test, not a success-rate estimate or proof of cross-client compatibility. Read the QA report for review and execution boundaries."
+}

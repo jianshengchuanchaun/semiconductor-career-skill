@@ -1,0 +1,425 @@
+[
+  {
+    "id": "F1",
+    "company": "NXP",
+    "category": "foreign",
+    "title": "2027 Campus - Analog Design Engineer",
+    "location": "Shanghai Jing'an, China",
+    "career_stage": "2027 graduate recruitment; master's degree in electrical engineering or a related field; this is not a senior role",
+    "posting_date": "Exact date unavailable; the official index only showed Posted 30+ Days Ago; do not infer a specific day",
+    "checked_date": "2026-09-22",
+    "url": "https://nxp.wd3.myworkdayjobs.com/en-US/careers/job/XMLNAME-2027-Campus---Analog-Design-Engineer_R-10064704",
+    "status": "Search-index text from the official recruitment domain was readable, requisition R-10064704; the direct dynamic page yielded no extracted body and browser rechecking timed out; current application status was not verified",
+    "requirements": [
+      {
+        "skill": "CMOS analog foundations, device physics, processes, and analog layout",
+        "evidence_type": "required",
+        "paraphrase": "Listed under Requirements, together with basic mixed-signal concepts."
+      },
+      {
+        "skill": "EDA and SPICE simulation",
+        "evidence_type": "required",
+        "paraphrase": "Requires familiarity with EDA and SPICE and experience in the Cadence environment."
+      },
+      {
+        "skill": "Analytical problem solving and team communication",
+        "evidence_type": "required",
+        "paraphrase": "Requires analytical problem solving, teamwork, and communication in English and Mandarin."
+      },
+      {
+        "skill": "Analog/mixed-signal internship, research, or tape-out experience",
+        "evidence_type": "preferred",
+        "paraphrase": "Listed as an advantage in the source; do not rewrite as mandatory tape-out experience."
+      },
+      {
+        "skill": "Low-power and precision analog",
+        "evidence_type": "preferred",
+        "paraphrase": "Relevant knowledge is listed as an advantage."
+      },
+      {
+        "skill": "Post-silicon validation and laboratory measurement",
+        "evidence_type": "preferred",
+        "paraphrase": "Understanding measurement techniques is listed as an advantage."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "Analog foundations and SPICE",
+        "learning_task": "Teaching recommendation: derive common-source gain and output swing, then run DC, AC, and transient simulations with legally available models; record differences between calculations and simulation.",
+        "evidence": "Derivations, reproducible netlist, test-condition table, and discrepancy explanations; this exercise is not a company-published interview question."
+      },
+      {
+        "skill": "Design/layout collaboration",
+        "learning_task": "Teaching recommendation: write specifications and layout constraints for an op-amp or LDO submodule; with authorized tools, compare performance after parasitic extraction.",
+        "evidence": "Specifications, schematic, and testbench; if layout is completed, retain DRC, LVS, and post-layout reports separately because they do not substitute for one another."
+      },
+      {
+        "skill": "English communication",
+        "learning_task": "Teaching recommendation: use one English figure and a three-minute oral explanation of project metrics, actual test conclusions, and a justified change; separately identify any educational fault injection.",
+        "evidence": "English project abstract and experimental records that support follow-up questions."
+      }
+    ],
+    "limits": "Teaching sample, not a current application list or market statistics. The 2027 graduating-cohort condition applies to this sample, not automatically to a first-year graduate student enrolling in 2026. Do not claim tape-out without one; the body does not require every person to master all analog modules.",
+    "source_evidence": "The official-domain search result supplied the title, Shanghai Jing'an, and R-10064704. Requirements separately listed a 2027 master's degree, foundations/tools, and three advantages. Duties included analog/mixed-signal IP, layout collaboration, and product evaluation. Direct body extraction did not succeed; verification was at official-index level.",
+    "evidence_access": "official_search_index",
+    "currently_open_verified": false,
+    "recruitment_status": "current_application_status_unverified",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard",
+    "alternate_official_urls": [
+      "https://nxp.wd3.myworkdayjobs.com/fr-FR/careers/job/Shanghai-JingAn/XMLNAME-2027-Campus---Analog-Design-Engineer_R-10064704"
+    ]
+  },
+  {
+    "id": "F2",
+    "company": "Renesas Electronics",
+    "category": "foreign",
+    "title": "Intern- Analog Design (Graduating from Year 2027)",
+    "location": "Binhai New Area, Tianjin, China",
+    "career_stage": "Full-time enrolled master's students graduating in 2027; electronics or analog specialization; at least 4 months and 5 working days/week",
+    "posting_date": "No explicit posting date on the page; requisition identifier contains 20025143_2026-02-03, which is not treated as the posting date",
+    "checked_date": "2026-09-22",
+    "url": "https://jobs.renesas.com/job/intern-analog-design-graduating-from-year-2027-in-tianjin-china-jid-4127",
+    "status": "Official page body was readable and explicitly marked expired; use only as a historical skills sample, not an application recommendation",
+    "requirements": [
+      {
+        "skill": "Analog ICs and basic electronic circuits",
+        "evidence_type": "required",
+        "paraphrase": "Requires analog foundations and understanding of basic circuits such as amplifiers, filters, and ADCs/DACs."
+      },
+      {
+        "skill": "Simulation tools such as SPICE and MATLAB",
+        "evidence_type": "required",
+        "paraphrase": "Qualifications include experience with industry simulation tools; tools in parentheses are examples."
+      },
+      {
+        "skill": "Circuit analysis, debugging, and team communication",
+        "evidence_type": "required",
+        "paraphrase": "Requires analytical problem solving, debugging, and written/oral collaboration."
+      },
+      {
+        "skill": "Laboratory circuit testing",
+        "evidence_type": "preferred",
+        "paraphrase": "Prior testing experience is explicitly an advantage."
+      },
+      {
+        "skill": "Specifications, design reviews, and post-layout collaboration",
+        "evidence_type": "explicit",
+        "paraphrase": "A job duty: write module specifications and use checklists/simulation results to demonstrate chip-specification compliance while collaborating on layout and post-layout simulation."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "Specification-driven design",
+        "learning_task": "Teaching recommendation: write 3–5 measurable specifications for a small amplifier, define test conditions first, then build simulations and explain each result.",
+        "evidence": "Specification-to-test mapping, raw data, result screenshots, and unmet items."
+      },
+      {
+        "skill": "Debugging and review",
+        "learning_task": "Teaching recommendation: deliberately inject one bias or load error, diagnose it, and conduct a five-minute design review.",
+        "evidence": "Failure observation, hypotheses, verification steps, before/after comparison, and review material."
+      },
+      {
+        "skill": "Internship scheduling",
+        "learning_task": "Teaching recommendation: incorporate consecutive internship duration, days on site, and supervisor arrangements into the plan; first-year preparation does not mean current eligibility for this internship.",
+        "evidence": "Student profile with explicit graduation year and internship availability."
+      }
+    ],
+    "limits": "Expired official historical sample. The body specifies both graduation in 2027 and no earlier than April 2027; do not generalize these to all Renesas roles. The date inside the requisition ID lacks a separate posting-date field as support.",
+    "source_evidence": "In the verification-tool page extract: line 26 title; line 27 expiry notice; lines 47–59 graduation year, enrolled master’s status, duration/location, foundations, and testing advantage; lines 35–42 specifications/post-layout duties; line 88 requisition ID.",
+    "evidence_access": "official_page_body",
+    "currently_open_verified": false,
+    "recruitment_status": "expired",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard"
+  },
+  {
+    "id": "F3",
+    "company": "NVIDIA",
+    "category": "foreign",
+    "title": "ASIC Design and Verification Intern, SOC - 2027",
+    "location": "Shanghai, China",
+    "career_stage": "Student internship; enrolled bachelor's/master's degree in electrical engineering, computer engineering, computer science, or related fields; the title contains 2027 but does not independently establish a strict graduating-cohort condition",
+    "posting_date": "No explicit posting date obtained; do not substitute a search crawl date",
+    "checked_date": "2026-09-22",
+    "url": "https://jobs.nvidia.com/careers/job/893397572374?domain=nvidia.com&hl=en",
+    "status": "Official job search-index text was readable, requisition JR2024860, category Univ Employment; the direct dynamic page returned only limited framework content; current application status was not verified",
+    "requirements": [
+      {
+        "skill": "Digital logic and front-end ASIC flow",
+        "evidence_type": "required",
+        "paraphrase": "Requires understanding of RTL, simulation, synthesis, STA, lint, CDC/RDC, and clock/reset foundations."
+      },
+      {
+        "skill": "Verilog or SystemVerilog",
+        "evidence_type": "required",
+        "paraphrase": "Requires proficiency in one or both languages."
+      },
+      {
+        "skill": "Formal verification, Linux, and EDA foundations",
+        "evidence_type": "required",
+        "paraphrase": "Requires familiarity with formal-verification concepts and tools; examples include property specification/SVA, equivalence checking, and formal property verification. Also requires the Linux environment and common EDA tools. Do not remove assertion/formal foundations because another language bullet describes some knowledge as a plus."
+      },
+      {
+        "skill": "Debugging, analysis, and collaboration in English",
+        "evidence_type": "required",
+        "paraphrase": "Requires analytical debugging, attention to detail, willingness to learn, and English communication with a global team."
+      },
+      {
+        "skill": "UVM, SVA, or functional coverage",
+        "evidence_type": "preferred",
+        "paraphrase": "Only the language bullet lists UVM/SVA/functional-coverage knowledge as a plus. Another requirement covers formal verification, with property specification/SVA examples. Preserve both contexts: do not generalize that all SVA is optional or turn every UVM capability into a mandatory threshold."
+      },
+      {
+        "skill": "Python, Perl, Tcl, Shell, C, or C++",
+        "evidence_type": "preferred",
+        "paraphrase": "This scripting/programming experience is preferred; students are not required to master every listed language simultaneously."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "RTL and verification",
+        "learning_task": "Teaching recommendation: begin with a synchronous FIFO, define interfaces and boundaries, then implement a self-checking testbench and randomized regression.",
+        "evidence": "Design specification, RTL, reproducible tests, and actual conclusions for all tests; if real failures or educational injections occur, save failure seeds and fixing commits separately. Attractive waveforms do not substitute for test conclusions."
+      },
+      {
+        "skill": "Coverage and assertions",
+        "learning_task": "Teaching recommendation: enumerate full/empty boundaries, concurrent reads/writes, and reset; write a limited set of assertions and explain uncovered conditions.",
+        "evidence": "Test plan, coverage-point table, assertion-failure diagnosis, and gap-closure records; actual tool support depends on the environment."
+      },
+      {
+        "skill": "Scripting and engineering collaboration",
+        "learning_task": "Teaching recommendation: choose either Python or Shell to batch regressions and summarize failures, and write a README in the user's chosen working language. Add a second language if the target role calls for it; bilingual documentation is an optional teaching choice, not an additional employer requirement.",
+        "evidence": "One-command reproduction, clear logs, failure statistics, and environment versions; a course project is not commercial SoC signoff."
+      }
+    ],
+    "limits": "This role combines design and verification and does not represent every DV role; it illustrates different requirement levels. Direct extraction of the official dynamic page was limited, so official-domain indexed content was used; live recruitment status is unconfirmed. Teaching exercises are not NVIDIA-certified courses, interview questions, or hiring standards.",
+    "source_evidence": "The official-domain result listed Shanghai, JR2024860, and the student-job category. What We Need to See specified degree, flow, languages, formal verification, Linux, and English. Rechecked 2026-09-22: the language bullet lists UVM/SVA/coverage as a plus, whereas the formal-verification bullet separately requires familiarity with concepts/tools and gives property specification/SVA, equivalence, and formal property verification as examples; the scripting bullet uses preference wording.",
+    "evidence_access": "official_search_index",
+    "currently_open_verified": false,
+    "recruitment_status": "current_application_status_unverified",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard"
+  },
+  {
+    "id": "C1",
+    "company": "Chipown",
+    "category": "domestic",
+    "title": "Analog IC Design Engineer (Graduate Recruitment; translated title)",
+    "location": "Wuxi/Suzhou/Shanghai, China",
+    "career_stage": "Campus recruitment; master's/doctoral degree; this role section does not state a graduating cohort or years of experience",
+    "posting_date": "2026-07-31",
+    "checked_date": "2026-09-22",
+    "url": "https://www.chipown.com.cn/cn/jobxylist/213.html",
+    "status": "Official body was readable and displayed an Apply Now entry; no application was submitted and remaining vacancies/application availability were not verified",
+    "requirements": [
+      {
+        "skill": "Analog circuit design and simulation",
+        "evidence_type": "explicit",
+        "paraphrase": "Duties include analog IC development, simulation, and verification. These describe the work; they do not directly require independently completing the entire flow before joining."
+      },
+      {
+        "skill": "Layout collaboration",
+        "evidence_type": "explicit",
+        "paraphrase": "Duties include guiding analog layout implementation."
+      },
+      {
+        "skill": "Test collaboration",
+        "evidence_type": "explicit",
+        "paraphrase": "Duties include system verification and assistance with CP/FT and reliability testing."
+      },
+      {
+        "skill": "Design documentation",
+        "evidence_type": "explicit",
+        "paraphrase": "Duties include producing standardized design documentation."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "Analog circuit design and simulation",
+        "learning_task": "Teaching recommendation: use a single-stage amplifier to compare hand calculations, small-signal modeling, and simulation, then vary load and supply; explain applicability using the actual model.",
+        "evidence": "Netlist/project with model source, parameters, and conditions; gain/bandwidth/power table; one explanation of a prediction-versus-simulation discrepancy."
+      },
+      {
+        "skill": "Layout collaboration",
+        "learning_task": "Teaching recommendation: with legitimate tools and a PDK, analyze matching and parasitic sensitivity for a small module; otherwise first write placement constraints and a review checklist.",
+        "evidence": "Placement constraints and matching rationale; append DRC/LVS and extracted-parasitic simulation results only after actual runs, labeling conceptual assignments separately."
+      },
+      {
+        "skill": "Test collaboration",
+        "learning_task": "Teaching recommendation: convert one performance specification into an executable test method; distinguish wafer probing, final packaged-part test, and laboratory validation; collect measurements only with equipment.",
+        "evidence": "Test matrix and error budget; supply raw readings when instruments are used, or label the result as simulation/test planning when unavailable."
+      },
+      {
+        "skill": "Design documentation",
+        "learning_task": "Teaching recommendation: write a small-module report with specifications, approach, actual conclusions, real failure or explicitly labeled educational injection cases, and reproduction steps.",
+        "evidence": "Specification → test → conclusion index and known-limitations list."
+      }
+    ],
+    "limits": [
+      "This role section lists degree and duties, without separate major, tool names, minimum project count, English, or preference conditions; do not fill these as employer requirements from general knowledge.",
+      "The analog IC design intern elsewhere on the same page has a 2028 master's cohort and 1+ year internship requirement; that is a different role and its fields must not be mixed into this graduate role.",
+      "The learning tasks are original teaching design for this project, not Chipown-assigned questions or an official development program."
+    ],
+    "source_evidence": {
+      "authority": "Company official campus-recruitment page; the campus-recruitment navigation on its experienced-hire page reaches this URL.",
+      "locator": "First role section titled Analog IC Design Engineer (Graduate Recruitment) in Chinese; verification-tool body lines 49–67.",
+      "summary": "Verified role, date, three cities, master's/doctoral education, and five duties; no separate qualification or preference list observed.",
+      "supporting_urls": [
+        "https://www.chipown.com.cn/cn/joblist/193.html"
+      ],
+      "direct_quote": ""
+    },
+    "evidence_access": "official_page_body",
+    "currently_open_verified": false,
+    "recruitment_status": "current_application_status_unverified",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard"
+  },
+  {
+    "id": "C2",
+    "company": "Telink",
+    "category": "domestic",
+    "title": "2027 Graduate Recruitment – Digital Verification Engineer (Nanjing; translated title)",
+    "location": "Nanjing, Jiangsu Province, China",
+    "career_stage": "2027 campus recruitment; full time; master's or higher in electronics, microelectronics, computing, communications, or related fields",
+    "posting_date": null,
+    "checked_date": "2026-09-22",
+    "url": "https://telink.zhiye.com/zpdetail/190837585",
+    "status": "Official recruiting-platform body was readable and displayed Apply Now; no application was submitted and remaining vacancies/application availability were not verified",
+    "requirements": [
+      {
+        "skill": "Digital foundations and HDL",
+        "evidence_type": "required",
+        "paraphrase": "Qualifications require digital-circuit foundations, verification flow, command of Verilog, and familiarity with SystemVerilog."
+      },
+      {
+        "skill": "Verification methods and programming",
+        "evidence_type": "required",
+        "paraphrase": "Familiarity with C/C++, understanding of UVM/OVM, and command of at least one listed scripting language; do not rewrite methodology awareness as platform mastery."
+      },
+      {
+        "skill": "Documentation and English",
+        "evidence_type": "required",
+        "paraphrase": "Ability to write verification plans/reports; CET-6 or above and technical-document reading/writing in English."
+      },
+      {
+        "skill": "Regression and coverage",
+        "evidence_type": "explicit",
+        "paraphrase": "Duties include regression and code/functional-coverage analysis and closure."
+      },
+      {
+        "skill": "Project experience",
+        "evidence_type": "preferred",
+        "paraphrase": "Preferences include wireless/DSP verification, UVM/OVM or assertion research, tape-out verification, or FPGA test experience."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "Digital foundations and HDL",
+        "learning_task": "Teaching recommendation: begin with counters, state machines, and a synchronous FIFO; explain reset, clock, and concurrency semantics, then write self-checking tests; do not replace timing reasoning with memorized syntax.",
+        "evidence": "Runnable RTL, self-checking tests, normal/abnormal waveforms, and one diagnosed/fixed real defect or explicitly labeled educational injection; preserve actual conclusions when the original specifications all pass."
+      },
+      {
+        "skill": "Verification methods and programming",
+        "learning_task": "Teaching recommendation: first write a small C/C++ reference model, use Python or Shell for regression automation, then separate a simple verification environment into driver, monitor, scoreboard, and other roles where tools support them.",
+        "evidence": "Reference-model unit tests, regression script, fixed random seeds, and failure-reproduction command; if UVM was not executed, explicitly state that only methodology was studied."
+      },
+      {
+        "skill": "Regression and coverage",
+        "learning_task": "Teaching recommendation: decompose FIFO specifications into reset, full/empty, simultaneous read/write, boundary, and other verification points; map functional coverage and iterate on missing cases.",
+        "evidence": "Specification-to-test-to-coverage matrix, regression summary, gap explanation, and defect record; 100% code coverage is not a guarantee of functional correctness."
+      },
+      {
+        "skill": "Documentation and English",
+        "learning_task": "Teaching recommendation: each week read an English protocol/tool-document section, explain its behavior in the user's chosen working language, and write a one-page English failure-reproduction report to practice the sample role's technical-English requirement; check degree and CET-6 eligibility separately.",
+        "evidence": "Technical summary with source, English issue, and verification report; list a separate action if examination eligibility is unmet."
+      },
+      {
+        "skill": "Project experience",
+        "learning_task": "Teaching recommendation: after the core verification project is stable, choose one protocol or DSP module relevant to the target role as an extension; preferred experience should not displace foundational work.",
+        "evidence": "Incremental specification, actual personal contribution, rerunnable results, and remaining issues; never invent internships, tape-outs, or board tests."
+      }
+    ],
+    "limits": [
+      "The page does not display a posting date; leave posting_date null and do not use search crawl time.",
+      "This is the Nanjing role; a separately listed Shanghai role has the same name, which does not imply location is freely negotiable.",
+      "The English certificate and major are explicit conditions of this role, not uniform conditions for all mainland-Chinese employers.",
+      "Separate preferred project experience from qualifications; do not turn the entire duty list into first-year entry prerequisites."
+    ],
+    "source_evidence": {
+      "authority": "Telink's official Campus Recruitment FAQ points to telink.m.zhiye.com; the same Telink system's Campus list links to this job detail.",
+      "locator": "Category/location: body lines 12–22; duties: 26–31; qualifications/preferences: 33–45.",
+      "summary": "Verified 2027 campus recruitment, Nanjing, degree/majors, qualifications, preferred experience, and verification duties; posting date not obtained.",
+      "supporting_urls": [
+        "https://www.telink-semi.com/campus-recruitment",
+        "https://telink.zhiye.com/Campus"
+      ],
+      "direct_quote": ""
+    },
+    "evidence_access": "official_page_body",
+    "currently_open_verified": false,
+    "recruitment_status": "current_application_status_unverified",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard"
+  },
+  {
+    "id": "C3",
+    "company": "SGMICRO",
+    "category": "domestic",
+    "title": "Analog IC Design Engineer (translated title)",
+    "location": "Harbin/Shanghai/Shenzhen/Dalian/Chengdu/Suzhou/Beijing, China",
+    "career_stage": "Experienced-hire recruitment; 3+ years of work experience; microelectronics/IC-related master's or higher; career-growth reference only",
+    "posting_date": "2024-04-18 (date displayed on the page; not identified as initial publication or update)",
+    "checked_date": "2026-09-22",
+    "url": "https://www.sg-micro.com/cn/society/job/2",
+    "status": "Official body with a historical displayed date was readable; current application availability was not verified; do not recommend as a new-graduate role",
+    "requirements": [
+      {
+        "skill": "Basic analog modules",
+        "evidence_type": "required",
+        "paraphrase": "Requires understanding and command of the principles and design of basic analog modules."
+      },
+      {
+        "skill": "Device, process, and control knowledge",
+        "evidence_type": "required",
+        "paraphrase": "Requires knowledge of semiconductor device physics, fabrication processes, and control principles."
+      },
+      {
+        "skill": "EDA and layout tools",
+        "evidence_type": "required",
+        "paraphrase": "Requires proficiency with relevant tools; no software brand is named."
+      }
+    ],
+    "teaching_mapping": [
+      {
+        "skill": "Basic analog modules",
+        "learning_task": "Teaching recommendation: use this as a post-graduation growth direction; in the first year, choose one module and explain operating-region, gain, noise, and stability tradeoffs.",
+        "evidence": "Derivation/experiment consistency check, parameter sensitivity, and one justified comparative change; separately identify real failures or educational injections and do not force an original-design failure."
+      },
+      {
+        "skill": "Device, process, and control knowledge",
+        "learning_task": "Teaching recommendation: connect device/process coursework to a concrete circuit; test parameter changes within authorized models and distinguish process corners, mismatch, and model assumptions.",
+        "evidence": "Model-applicability boundaries, corner-condition table, results with units, and conclusions that cannot be drawn."
+      },
+      {
+        "skill": "EDA and layout tools",
+        "learning_task": "Teaching recommendation: learn reproducible project organization, simulation setup, and result location; obtain the corresponding check reports individually if doing layout.",
+        "evidence": "Run steps, simulation logs, versions; list DRC/LVS/post-layout work only after actual completion."
+      }
+    ],
+    "limits": [
+      "Prominently mark experienced hiring, 3+ years, and the historical date; do not show this as a near-term graduate-entry threshold to first-year students.",
+      "Preferences, specific tool brands, salary, and vacancy counts are not supplied; do not invent them.",
+      "This describes only this role, not all SGMICRO roles or mainland-Chinese employers as a whole."
+    ],
+    "source_evidence": {
+      "authority": "SGMICRO official experienced-hire job detail under society.",
+      "locator": "Role attributes: body lines 3–23; requirements: lines 31–39.",
+      "summary": "Verified 7 cities, 3 years of experience, master's education, displayed date, and three capability groups.",
+      "supporting_urls": [
+        "https://www.sg-micro.com/cn/recruitment/society"
+      ],
+      "direct_quote": ""
+    },
+    "evidence_access": "official_page_body",
+    "currently_open_verified": false,
+    "recruitment_status": "historical_experienced_role_status_unverified",
+    "teaching_mapping_origin": "Original educational design and inference for this project, not an official employer training plan, interview question, or hiring standard"
+  }
+]

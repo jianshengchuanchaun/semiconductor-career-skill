@@ -17,11 +17,11 @@
 
 ## 适配决定
 
-1. **一个维护源。** 课程与工作流维护在 `skills/semiconductor-career-planner/`。Codex 包使用标准核心 frontmatter；WorkBuddy 包在构建时补充 P3 所列平台元数据。教学内容保持一致。
+1. **每种语言一个维护源。** 中文维护在 `skills/semiconductor-career-planner/`，英文维护在 `skills/semiconductor-career-planner-en/`。同一种语言的 Codex 包使用标准核心 frontmatter；WorkBuddy 包在构建时补充 P3 所列平台元数据。正文和配套资料在两个平台包之间保持一致。双语适配更新于2026-09-23，不改变上方来源核查日期。
 2. **优先指令与资料。** 规划本身不依赖某个平台专用工具名，不要求 EDA、Python 或外部 API 才能开始对话。宿主的文件、搜索和导出能力在运行时检查。
 3. **Codex 安装遵循当前公开目录。** 新安装文档使用 `.agents/skills`；不因作者本机存在历史目录而把旧路径写成新用户唯一入口。
 4. **WorkBuddy 通过界面上传。** 没有充分证据把 `.workbuddy/skills` 或 CodeBuddy Code 的 `.codebuddy/skills` 当成 WorkBuddy 桌面端的通用安装契约，因此不提供这类路径命令。
-5. **包名明确区分。** `semiconductor-career-planner-codex-v1.1.0.zip` 与 `semiconductor-career-planner-workbuddy-v1.1.0.zip` 避免把平台元数据差异交给初学者处理；原v1.0.0版本作为历史包保留。
+5. **包名明确区分语言和平台。** v1.2.0采用 `semiconductor-career-planner-{zh|en}-{codex|workbuddy}-v1.2.0.zip`，共四个包。准确下载入口见[安装说明](INSTALL.md)；旧版包由作者本地保留。
 
 ## 尚未被这些来源证明的事项
 

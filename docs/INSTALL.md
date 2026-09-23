@@ -1,9 +1,11 @@
 # 安装与首次使用
 
+**简体中文** | [English](INSTALL.en.md)
+
 作者：我的模拟电路世界  
 文档核实日期：2026-09-22
 
-当前版本：v1.1.0。新版包含6家企业官方来源岗位案例；升级时保留自己的学习档案，备份旧技能再安装完整新版，不只替换 `SKILL.md`。v1.0.0作为历史版本保留。
+当前版本：v1.2.0（双语更新日期2026-09-23，平台来源核查日期仍为2026-09-22）。提供完整中文与英文两套技能。升级时保留自己的学习档案，备份旧技能再安装完整新版，不只替换 `SKILL.md`。
 
 本项目提供同一套半导体研究生求职规划工作流。Codex 和 WorkBuddy 使用相同的规划指令、岗位参考资料与模板，发布包仅按宿主要求调整元数据与压缩目录布局。**平台文档已核实；本次交付未完成两个客户端的真实导入与对话验收。** 官方依据与待确认事项见 [platform-sources.md](platform-sources.md)。
 
@@ -11,12 +13,16 @@
 
 | 使用场景 | 获取内容 | 安装方式 |
 | --- | --- | --- |
-| Codex 用户 | `semiconductor-career-planner-codex-v1.1.0.zip`，或本仓库源码 | 解压后，将完整技能目录复制到 Codex 技能目录 |
-| WorkBuddy 用户 | `semiconductor-career-planner-workbuddy-v1.1.0.zip` | 在 WorkBuddy 技能页面上传 ZIP |
+| Codex 中文版 | [中文 Codex ZIP](../release/semiconductor-career-planner-zh-codex-v1.2.0.zip) | 按下文安装 `semiconductor-career-planner` |
+| WorkBuddy 中文版 | [中文 WorkBuddy ZIP](../release/semiconductor-career-planner-zh-workbuddy-v1.2.0.zip) | 在 WorkBuddy 技能页面上传 ZIP |
+| Codex 英文版 | [English Codex ZIP](../release/semiconductor-career-planner-en-codex-v1.2.0.zip) | 按 [English setup](INSTALL.en.md) 安装 `semiconductor-career-planner-en` |
+| WorkBuddy 英文版 | [English WorkBuddy ZIP](../release/semiconductor-career-planner-en-workbuddy-v1.2.0.zip) | 上传英文 ZIP，按英文技能名调用 |
 | 希望修改课程、贡献岗位资料 | 本仓库完整源码 | 修改 `skills/semiconductor-career-planner/`，然后重新构建发布包 |
 | 暂时无法安装 Skill | 本仓库完整源码 | 使用本文第 5 节的文件阅读入口 |
 
 技能源码入口是 `skills/semiconductor-career-planner/SKILL.md`。请保留该目录内的参考资料和模板，不要只复制一份 `SKILL.md`。普通使用不要求 Python、Node.js、EDA 软件或 API Key；制作发布包、运行本仓库的校验脚本可能需要 Python。实际模型使用费用与联网能力由宿主平台决定。
+
+以下示例默认安装中文版。英文版源码位于 `skills/semiconductor-career-planner-en/`，默认用英文输出；其命令与目录示例见[英文安装说明](INSTALL.en.md)。两版均含13条路线、9个模板和6家企业案例。任选一版即可；同时安装时明确点名其中一个，避免重复生成计划。用户明确要求的回答语言优先。
 
 ## 2. Codex 安装
 
@@ -113,7 +119,7 @@ codex '$semiconductor-career-planner 我是研一新生，每周12小时，请�
 
 ### 3.1 上传专用技能包
 
-1. 下载 `semiconductor-career-planner-workbuddy-v1.1.0.zip`。
+1. 下载 `semiconductor-career-planner-zh-workbuddy-v1.2.0.zip`。
 2. 在 WorkBuddy 左侧进入“专家·技能·连接器”，再打开“技能”。
 3. 选择“添加技能”中的“上传技能”，选择这个 ZIP，等待导入完成。
 4. 在“已安装”中确认技能存在且已启用，然后创建对话使用。
@@ -127,7 +133,7 @@ WorkBuddy 专用包会补充开放平台文档列出的 `description_zh`、`desc
 本项目选择让 WorkBuddy ZIP 内的 `SKILL.md` 直接位于压缩包根目录，相关目录与其并列：
 
 ```text
-semiconductor-career-planner-workbuddy-v1.1.0.zip
+semiconductor-career-planner-zh-workbuddy-v1.2.0.zip
 ├── SKILL.md
 └── references/ 以及其他配套目录
 ```

@@ -1,4 +1,31 @@
-# 今晚发布指南
+# 双语版本发布指南
+
+**简体中文** | [English](RELEASE.en.md)
+
+## v1.2.0 双语更新（2026-09-23）
+
+当前版本新增完整独立英文技能 `semiconductor-career-planner-en`。中文保留 `semiconductor-career-planner`。每版均含13条路线、39个分层项目、29张资源卡、9个模板和6家企业案例。首页提供语言与平台选择，见[安装说明](INSTALL.md)。
+
+当前安装包如下，完整源码包名为 `semiconductor-career-planner-source-v1.2.0.zip`：
+
+```text
+semiconductor-career-planner-zh-codex-v1.2.0.zip
+semiconductor-career-planner-zh-workbuddy-v1.2.0.zip
+semiconductor-career-planner-en-codex-v1.2.0.zip
+semiconductor-career-planner-en-workbuddy-v1.2.0.zip
+```
+
+运行 `python scripts/validate_release.py` 与 `python scripts/build_release.py` 校验并构建四个安装包和源码包。使用过滤后的源码更新已有仓库，保留历史和用户修改；推送后检查首页、英文入口与四个下载链接。旧包保留在作者本地及Git历史中。
+
+**源码继续排除全部Word/PPT/PDF成品、`.qa/`和个人学习目录。** 中文v1.1 Office成品、内容源和历史评测保留原语言与版本，没有新建英文Office成品。企业案例仍是中国地区样本，核查日期保持2026-09-22，未重新核查当前投递状态。
+
+验证范围见 [v1.2 QA](QA-v1.2.md)。Git推送不等于创建GitHub Release；只有实际创建Release并上传附件后，才提供相应真实下载链接。若另建`v1.2.0` Release，四个技能包和源码包可作为附件，Office成品继续单独处理。
+
+下面保留v1.1.0首次发布说明，供历史追溯及中文Office重建参考；其中旧包名、旧版本与首次建库步骤不用于本次双语更新。
+
+---
+
+## 历史：v1.1.0 首次发布
 
 项目仓库：[https://github.com/jianshengchuanchaun/semiconductor-career-skill](https://github.com/jianshengchuanchaun/semiconductor-career-skill)。简介可用：面向半导体研究生的岗位能力规划Skill，从技能诊断到项目、实习与求职，适配Codex与WorkBuddy。
 

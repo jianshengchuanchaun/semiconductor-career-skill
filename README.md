@@ -1,16 +1,27 @@
 # 半导体研究生就业规划 Skill
 
-**我的模拟电路世界 · Semiconductor Career Planner · v1.1.0**
+**简体中文** | [English](README.en.md)
+
+**我的模拟电路世界 · Semiconductor Career Planner · v1.2.0**
 
 项目仓库：[https://github.com/jianshengchuanchaun/semiconductor-career-skill](https://github.com/jianshengchuanchaun/semiconductor-career-skill)
 
 给刚入学的半导体、微电子及相关专业研究生，一套从目标岗位倒推的学习工作流：**先知道岗位需要什么技能，再诊断基础，逐步完成学习、项目、验收和求职准备。**
 
-适用于 Codex 与 WorkBuddy。仓库提供同一套技能核心和两个平台适配包；平台规范已核对，客户端导入与对话需按[验收步骤](docs/INSTALL.md#4-五分钟验收能看到名字还不够)检查。本项目不提供就业保证，也不等同平台官方认证。
+适用于 Codex 与 WorkBuddy。**现在可以自由选择完整中文版或英文版**，各自包含全部岗位路线、资源、模板与企业案例。每种语言都提供两个平台适配包；平台规范已核对，客户端导入与对话需按[验收步骤](docs/INSTALL.md#4-五分钟验收能看到名字还不够)检查。本项目不提供就业保证，也不等同平台官方认证。
+
+## 选择语言与平台 / Choose your language
+
+| 语言 / Language | Codex | WorkBuddy | 安装说明 / Setup |
+| --- | --- | --- | --- |
+| 简体中文 | [下载中文版](release/semiconductor-career-planner-zh-codex-v1.2.0.zip) | [下载中文版](release/semiconductor-career-planner-zh-workbuddy-v1.2.0.zip) | [中文安装说明](docs/INSTALL.md) |
+| English | [Download English](release/semiconductor-career-planner-en-codex-v1.2.0.zip) | [Download English](release/semiconductor-career-planner-en-workbuddy-v1.2.0.zip) | [English setup](docs/INSTALL.en.md) |
+
+中文技能名为 `semiconductor-career-planner`，英文技能名为 `semiconductor-career-planner-en`。任选一版即可；两版同时安装时，点名希望使用的技能。每版默认以对应语言回答，也遵从用户明确指定的回答语言。英文版保留企业样本的中国地区背景；翻译日期不等于重新核查招聘日期。
 
 ## 从这里开始
 
-配套阅读：[Word手册与PPT成品获取说明](docs/DOWNLOADS.md) · [逐页讲稿](presentations/10分钟逐页讲稿.md) · [6家企业岗位案例](skills/semiconductor-career-planner/references/company-examples.md) · [从JD到学习计划的示范](examples/company-to-plan.md) · [B站推广文案](docs/BILIBILI.md) · [发布说明](docs/RELEASE.md) · [v1.1验证范围](docs/QA-v1.1.md)。作者本地保留v1.0历史产物。
+配套阅读：[Word手册与PPT成品获取说明](docs/DOWNLOADS.md) · [逐页讲稿](presentations/10分钟逐页讲稿.md) · [6家企业岗位案例](skills/semiconductor-career-planner/references/company-examples.md) · [从JD到学习计划的示范](examples/company-to-plan.md) · [B站推广文案](docs/BILIBILI.md) · [发布说明](docs/RELEASE.md) · [v1.2双语验证范围](docs/QA-v1.2.md)。历史记录保留原版本和日期。
 
 **源码ZIP不含Word、PPT或PDF成品。** 源码保留手册和演示的内容源、逐页讲稿与构建脚本；32页Word和12页PPT可作为独立Release附件或推广材料另行提供，准确文件名和下载状态见[获取说明](docs/DOWNLOADS.md)。
 
@@ -76,15 +87,16 @@ Codex 支持技能选择器的入口可用 `$semiconductor-career-planner`。Wor
 
 ```text
 skills/semiconductor-career-planner/
-  SKILL.md                      技能入口
+  SKILL.md                      中文技能入口
   references/                   岗位库、资源库、规划与验收方法
   templates/                    学生画像、账本、任务卡、周复盘等模板
+skills/semiconductor-career-planner-en/  完整英文技能，同样的目录结构
 docs/                           安装、来源、发布、B站推广、手册内容源
 presentations/                  演示内容源、讲稿与构建说明
 examples/                       完整案例与示例提示词
 evals/                          评测提示与质量检查记录
 scripts/                        验证、打包、生成文档
-release/                        两个平台ZIP和完整源码ZIP
+release/                        中英两版 × 两个平台，共四个技能ZIP
 ```
 
 普通使用不需要运行脚本。维护者可在仓库根目录运行 Python 3.10+：
@@ -114,4 +126,4 @@ v1.1修订期间还完成了三个实际模型响应情境，并由另一审阅�
 
 欢迎通过 Issue 提交岗位补充、来源失效、客户端兼容问题和真实学习反馈；请先看 [贡献指南](CONTRIBUTING.md)。不要提交个人敏感信息、未授权PDK、实验室或公司机密。
 
-维护日期：2026-09-22。来源与兼容性边界见 [平台资料](docs/platform-sources.md) 和参考库中的官方资源链接。公开发布的版本与客户端可能继续变化，遇到不一致以最新官方文档和实际测试为准。
+维护日期：2026-09-23。平台与企业来源核查日期仍为2026-09-22；双语版未宣称重新核查外部页面。来源与兼容性边界见 [平台资料](docs/platform-sources.md) 和参考库中的官方资源链接。公开发布的版本与客户端可能继续变化，遇到不一致以最新官方文档和实际测试为准。

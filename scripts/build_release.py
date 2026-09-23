@@ -1,4 +1,4 @@
-"""Build v1.1 adapters and source archive without Office deliverables.
+"""Build bilingual v1.2 adapters and source archive without Office deliverables.
 
 Run --list-source for a read-only packaging manifest. Old releases remain untouched.
 Word/PPT/PDF are separate attachments and are not required to build source.
@@ -15,14 +15,15 @@ from validate_release import validate
 from validate_v11_evidence import WORD_REL, PPT_REL
 
 ROOT = Path(__file__).resolve().parents[1]
-SKILL = ROOT / 'skills' / 'semiconductor-career-planner'
 OUT = ROOT / 'release'
-VERSION = '1.1.0'
+VERSION = '1.2.0'
 NAME = 'semiconductor-career-planner'
-STAMP = (2026, 9, 22, 0, 0, 0)
+EDITIONS = {'zh': NAME, 'en': NAME+'-en'}
+STAMP = (2026, 9, 23, 0, 0, 0)
 EXCLUDED_DIRS = {'.git', '.qa', '__pycache__', 'evaluation-workspace', 'career-plan',
                  'node_modules', '.venv', 'venv', 'tmp', 'temp'}
-PLATFORM_NAMES = {f'{NAME}-{platform}-v{VERSION}.zip' for platform in ['codex', 'workbuddy']}
+PLATFORM_NAMES = {f'{NAME}-{lang}-{platform}-v{VERSION}.zip'
+                  for lang in EDITIONS for platform in ['codex', 'workbuddy']}
 FINAL_OFFICE = {WORD_REL, PPT_REL}
 EXCLUDED_DOCUMENT_EXTENSIONS = {'.doc', '.docx', '.docm', '.ppt', '.pptx', '.pptm', '.pdf'}
 OPTIONAL_PDF = {Path(WORD_REL).with_suffix('.pdf').as_posix(),
@@ -37,7 +38,7 @@ def include_source(rel):
         return False
     if rel.name in {'.DS_Store', 'Thumbs.db'} or rel.name.startswith('SHA256SUMS'):
         return False
-    if '-source-v' in rel.name or 'v1.0.0' in rel.name:
+    if '-source-v' in rel.name or re.search(r'v1\.[01]\.0',rel.name):
         return False
     if rel.parts[0] == 'release':
         return rel.name in PLATFORM_NAMES
@@ -88,12 +89,12 @@ def check_source_links(members):
         raise RuntimeError('Unresolved links after source filtering: ' + '; '.join(errors))
 
 
-def check_adapter(path, platform, files, core, body):
+def check_adapter(path, platform, files, core, body, skill, skill_name):
     with zipfile.ZipFile(path) as zf:
         if zf.testzip() is not None:
             raise RuntimeError(f'Corrupt archive {path.name}')
-        prefix = f'{NAME}/' if platform == 'codex' else ''
-        expected = {prefix + p.relative_to(SKILL).as_posix() for p in files} | {prefix + 'LICENSE'}
+        prefix = f'{skill_name}/' if platform == 'codex' else ''
+        expected = {prefix + p.relative_to(skill).as_posix() for p in files} | {prefix + 'LICENSE'}
         if set(zf.namelist()) != expected:
             raise RuntimeError(f'Adapter file set drift: {platform}')
         actual = zf.read(prefix + 'SKILL.md').decode('utf-8')
@@ -104,13 +105,13 @@ def check_adapter(path, platform, files, core, body):
         if platform == 'workbuddy' and f'version: {VERSION}' not in actual:
             raise RuntimeError('WorkBuddy version mismatch')
         for p in files:
-            rel = p.relative_to(SKILL).as_posix()
+            rel = p.relative_to(skill).as_posix()
             if rel != 'SKILL.md' and zf.read(prefix + rel) != p.read_bytes():
                 raise RuntimeError(f'Adapter reference bytes drift: {platform}/{rel}')
 
 
 def old_release_hashes():
-    files = list(OUT.glob('*v1.0.0*'))
+    files = [p for p in OUT.glob('*') if re.search(r'v1\.[01]\.0',p.name)]
     old_word = ROOT / 'docs/半导体研究生就业规划手册_我的模拟电路世界_v1.0.0.docx'
     if old_word.is_file():
         files.append(old_word)
@@ -135,39 +136,42 @@ def main():
     OUT.mkdir(exist_ok=True)
     stage = ROOT / '.qa' / f'release-stage-v{VERSION}'
     stage.mkdir(parents=True, exist_ok=True)
-    files = sorted(p for p in SKILL.rglob('*') if p.is_file()
-                   and not EXCLUDED_DIRS.intersection(p.relative_to(SKILL).parts)
-                   and not p.name.startswith('~$') and p.suffix != '.pyc')
-    core = (SKILL / 'SKILL.md').read_text(encoding='utf-8')
-    body = core.split('---', 2)[2]
     zh = '面向半导体研究生的岗位能力规划，先明确技能，再诊断、拆解学习与项目、验收和求职复盘。'
     en = 'Plan semiconductor graduate careers from target job skills through diagnosis, learning tasks, projects, evidence and recruiting preparation.'
-    wb = '\n'.join(['---', f'name: {NAME}', f'description: {json.dumps(zh, ensure_ascii=False)}',
-                    f'description_zh: {json.dumps(zh, ensure_ascii=False)}',
-                    f'description_en: {json.dumps(en)}', f'version: {VERSION}',
-                    'author: 我的模拟电路世界', '---']) + body
     staged = []
     overrides = {}
-    for platform in ['codex', 'workbuddy']:
-        path = stage / f'{NAME}-{platform}-v{VERSION}.zip'
-        with zipfile.ZipFile(path, 'w') as zf:
-            for p in files:
-                rel = p.relative_to(SKILL).as_posix()
-                name = f'{NAME}/{rel}' if platform == 'codex' else rel
-                data = wb.encode('utf-8') if platform == 'workbuddy' and rel == 'SKILL.md' else p.read_bytes()
-                write_member(zf, name, data)
-            license_name = f'{NAME}/LICENSE' if platform == 'codex' else 'LICENSE'
-            write_member(zf, license_name, (ROOT / 'LICENSE').read_bytes())
-        check_adapter(path, platform, files, core, body)
-        staged.append(path)
-        overrides['release/' + path.name] = path
+    file_counts = {}
+    for lang,skill_name in EDITIONS.items():
+        skill = ROOT/'skills'/skill_name
+        files = sorted(p for p in skill.rglob('*') if p.is_file()
+                       and not EXCLUDED_DIRS.intersection(p.relative_to(skill).parts)
+                       and not p.name.startswith('~$') and p.suffix != '.pyc')
+        file_counts[lang]=len(files)
+        core=(skill/'SKILL.md').read_text(encoding='utf-8')
+        body=core.split('---',2)[2]
+        wb='\n'.join(['---',f'name: {skill_name}',f'description: {json.dumps(en if lang=="en" else zh,ensure_ascii=False)}',
+                      f'description_zh: {json.dumps(zh,ensure_ascii=False)}',f'description_en: {json.dumps(en)}',
+                      f'version: {VERSION}','author: 我的模拟电路世界','---'])+body
+        for platform in ['codex','workbuddy']:
+            path=stage/f'{NAME}-{lang}-{platform}-v{VERSION}.zip'
+            with zipfile.ZipFile(path,'w') as zf:
+                for p in files:
+                    rel=p.relative_to(skill).as_posix()
+                    name=f'{skill_name}/{rel}' if platform=='codex' else rel
+                    data=wb.encode('utf-8') if platform=='workbuddy' and rel=='SKILL.md' else p.read_bytes()
+                    write_member(zf,name,data)
+                write_member(zf,f'{skill_name}/LICENSE' if platform=='codex' else 'LICENSE',(ROOT/'LICENSE').read_bytes())
+            check_adapter(path,platform,files,core,body,skill,skill_name)
+            staged.append(path)
+            overrides['release/'+path.name]=path
     members = source_members(overrides)
     member_names = {rel for rel, _ in members}
     required = set(overrides) | {
         'docs/research-foreign-jobs.json', 'docs/research-domestic-jobs.json',
         'docs/research-foreign-jobs.md', 'docs/research-domestic-jobs.md',
         'presentations/talk-content.json', 'scripts/build_release.py',
-        'scripts/validate_v11_evidence.py'}
+        'scripts/validate_v11_evidence.py','scripts/validate_bilingual.py',
+        'skills/semiconductor-career-planner-en/SKILL.md','README.en.md','docs/INSTALL.en.md'}
     if not required <= member_names:
         raise RuntimeError(f'Source missing required deliverables: {sorted(required - member_names)}')
     check_source_links(members)
@@ -195,12 +199,12 @@ def main():
     sums.write_text('\n'.join(checksums) + '\n', encoding='utf-8')
     after = old_release_hashes()
     if preserved != after:
-        raise RuntimeError('Old v1.0 artifact hashes changed')
-    result = {'version': VERSION, 'archives': [p.name for p in staged], 'skill_files': len(files),
+        raise RuntimeError('Historical artifact hashes changed')
+    result = {'version': VERSION, 'archives': [p.name for p in staged], 'skill_files': file_counts,
               'adapter_body_equal': True, 'adapter_references_byte_equal': True,
               'source_files': len(members), 'source_crc_passed': True,
               'source_office_or_pdf_files': 0,
-              'old_v1_0_artifacts_preserved': len(preserved), 'checksums': sums.name,
+              'historical_artifacts_preserved': len(preserved), 'checksums': sums.name,
               'scope': 'Source and adapter archive checks; Office/PDF deliverables are excluded from source and only hashed separately when present. Client import and visual QA remain separate.'}
     (ROOT / '.qa' / f'release-v{VERSION}-report.json').write_text(
         json.dumps(result, ensure_ascii=False, indent=2), encoding='utf-8')

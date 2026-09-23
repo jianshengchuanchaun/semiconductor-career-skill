@@ -1,5 +1,9 @@
 # Word、PPT与独立附件获取说明
 
+**简体中文** | [English](DOWNLOADS.en.md)
+
+当前Skill为v1.2.0，支持中文/英文选择；下面的中文Word和PPT仍是独立的v1.1.0成品。本次没有制作英文Office成品。
+
 作者：我的模拟电路世界。版本：v1.1.0。
 
 **源码ZIP不包含Word、PPT或PDF成品。** 这些成品与Skill源码分开提供，可作为GitHub Release的独立附件或B站推广材料发放。项目仓库为 [https://github.com/jianshengchuanchaun/semiconductor-career-skill](https://github.com/jianshengchuanchaun/semiconductor-career-skill)。本次仅上传源码及平台Skill包，Word/PPT成品未上传；下表给出本地成品的准确文件名，不能据此认定它们已经在网上发布。
